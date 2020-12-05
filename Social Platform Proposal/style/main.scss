@@ -1,0 +1,37 @@
+//importing mixin and grid scss files
+@import '_mixins.scss';
+@import '_grids.scss';
+
+@include nav;
+@include grid;
+@include text;
+@include images;
+
+//stylizng navigation bar
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(113, 169, 252);
+}
+
+nav {
+    overflow: hidden;
+    background-color: navy;
+}
+
+//grid item styling
+.grid-item {
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+body, html {
+    height: 100%;
+}
+
+.head {
+    width: 100%;
+}
